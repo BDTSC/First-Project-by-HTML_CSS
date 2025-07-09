@@ -1,0 +1,302 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+.logo {
+  font-size: 25px;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+span {
+  color: red;
+  font-size: 60px;
+}
+nav {
+  background-color:bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  box-shadow: 0px -5px 10px gainsboro;
+  width: 100%;
+}
+nav >ul {
+  display: flex;
+  
+}
+nav > ul > li {
+  list-style-type: none;
+  padding: 20px 5px;
+  border-right: 1px solid black;
+}
+
+nav > ul > li:first-child {
+  border-left: 1px solid black;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 20px 15px;
+  font-size: 25px;
+}
+
+.dropdownmenu {
+
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -12px;
+  background-color:lawngreen;
+  width: 130px;
+  text-align: center;
+  opacity: 0;
+  visibility:hidden;
+  transform: translate(-20% , -0%);
+  transition: 1s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  box-shadow: 2px 2px 2px dodgerblue,-2px 2px 2px dodgerblue;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+nav > ul > li > .dropdownmenu > li  {
+  list-style-type: none;
+  padding: 5px;
+  border-bottom: 1px solid gold;
+}
+
+
+.dropdownmenu > li > a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav > ul > li:hover > .dropdownmenu {
+
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+nav > ul > li:hover > .dropdownmenu > li:hover {
+  background-color: white;
+  color: black;
+}
+.nav-btn {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+  background: radial-gradient(dodgerblue,rgb(205, 4, 138));
+  box-shadow: 3px 5px 10px grey,-3px -3px 10px gray;
+  border-radius: 5px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+/* Hero area code start here */
+
+.heading {
+  text-align: center;
+  color: beige;
+  padding-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(172, 255, 47, 0.062);
+  width: 300px;
+  
+  border-radius: 30px;
+  margin: 50px auto;
+
+}
+.bg-img {
+  background-image: url(google.jpg);
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-area {
+ 
+  
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+
+.top-script h1 {
+  background-color: rgba(176, 224, 230, 0.065);
+  width: 400px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero-btn {
+  font-size: 35px;
+  margin-left: 80px;
+  margin-top: 30px;
+  padding: 5px 25px;
+  outline: 2px solid green;
+  outline-offset: 3px;
+  border-radius: 50px;
+  background-color: rgba(243, 215, 3, 0.026);
+  cursor: pointer;
+  border: 2px solid black;
+  transition: .5s;
+}
+
+.hero-btn:hover {
+  background-color: rgb(10, 119, 46);
+}
+
+.socialicon {
+  margin-left: 50px;
+}
+
+.socialicon > a {
+  text-decoration: none;
+  
+}
+.socialicon > a > i{
+  font-size: 50px;
+  background-color: rgba(0, 128, 0, 0.252);
+  margin: 10px 5px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.socialicon > a > i:hover {
+  background-color: hotpink;
+}
+
+.main-container {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.Learn-Programming {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  transition: .5s;
+}
+.Learn-Programming > i {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.Learn-Programming > p {
+  text-align: justify;
+  padding-top: 10px;
+}
+.Learn-Programming:hover {
+  box-shadow: 3px 3px 10px gray;
+  padding: 20px 10px;
+  
+}
+.Web-Development {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  transition: .5s;
+}
+.Web-Development > i {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.Web-Development > p {
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.Web-Development:hover {
+  box-shadow: 3px 3px 10px gray;
+  padding: 20px 10px;
+}
+
+.Learn-Frelancing {
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  transition: .5s;
+}
+.Learn-Frelancing > i {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+.Learn-Frelancing > p {
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.Learn-Frelancing:hover {
+  box-shadow: 3px 3px 10px gray;
+  padding: 20px 10px;
+}
+
+.smart-area > h2 {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+.smart-area > h2::after {
+    content: '';
+    left: 670px;
+    top: 70px;
+    position: absolute;
+    background-color: brown;
+    width: 150px;
+    height: 5px;
+}
+
+.second-container {
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.smart-area-text {
+    width: 500px;
+    margin: 60px 0px;
+    
+}
+
+.smart-area-text > h4 {
+    font-size: 30px;
+    color: brown;
+}
+
+.smart-area-text > h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.smart-area-text > a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: brown;
+    margin: 30px 0;
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.smart-area-text > a:hover {
+    background-color: rgb(203, 94, 94);
+}
