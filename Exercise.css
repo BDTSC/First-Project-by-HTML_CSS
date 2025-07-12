@@ -12,10 +12,10 @@
   width: 100px;
   height: auto;
 }
-span {
+/* span {
   color: red;
   font-size: 60px;
-}
+} */
 nav {
   background-color:bisque;
   display: flex;
@@ -24,6 +24,8 @@ nav {
   padding: 0px 20px;
   box-shadow: 0px -5px 10px gainsboro;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 nav >ul {
   display: flex;
@@ -267,6 +269,7 @@ nav > ul > li:hover > .dropdownmenu > li:hover {
     justify-content: space-around;
     margin: auto;
     margin-top: 40px;
+   
 }
 
 .smart-area-text {
@@ -300,3 +303,238 @@ nav > ul > li:hover > .dropdownmenu > li:hover {
 .smart-area-text > a:hover {
     background-color: rgb(203, 94, 94);
 }
+
+/* Third Section start here  */
+
+#third-section {
+  width: 100%;
+  background-color: #fafafa;
+  margin: auto;
+  box-shadow: 0px 2px 5px gray;
+}
+.services-area {
+  width: 1000px;
+  margin: auto;
+  
+  padding-bottom: 30px;
+}
+.service-area-title {
+  text-align: center;
+  padding: 50px 0px 30px 0px;
+}
+
+.service-area-title > h2 {
+  padding: 10px 0px;
+  font-size: 40px;
+}
+
+.each-services-area {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  
+}
+
+.each-servive {
+  background-color: powderblue;
+  text-align: center;
+  padding: 15px 5px;
+  border-radius: 5px;
+  transition: .5s;
+}
+.each-servive > p  {
+  text-align: justify;
+}
+
+.each-servive > i {
+  font-size: 50px;
+  color: rgb(190, 79, 79);
+}
+.each-servive > h3 {
+  margin: 15px 0px;
+  font-size: 30px;
+}
+
+.each-servive:hover {
+  background-color: rgb(104, 197, 209);
+}
+ /* Third section end here */
+
+/* fourth section start here */
+
+.fourth-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.course-title {
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 0px 30px 0px;
+}
+.text-arrange > p {
+  text-align: justify;
+  padding: 10px;
+}
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: auto;
+}
+
+.single-card {
+  width: 310px;
+  text-align: center;
+  box-shadow: 5px 5px 10px grey;
+  padding-bottom: 10px;
+
+}
+.single-card > div > h3 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+.single-card > div > img {
+  max-width: 100%;
+  
+}
+
+.course-planning {
+  margin: 10px 20px;
+  border-top: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  padding: 10px 0px;
+}
+
+.course-pricing {
+  font-size: 25px;
+  
+}
+.course-duration {
+  color: gray;
+}
+
+.single-card > button {
+  background-color: brown;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.single-card > button:hover {
+  background-color: #a52a2a00;
+  color: black;
+}
+
+.single-card > a {
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+    /* fourth section end here */
+
+    /* Testimonials Section start*/
+
+    .testo-container {
+      background-color: bisque;
+    }
+    .testimonial-area {
+      
+      padding: 20px 0px;
+      width: 100%;
+    }
+    .testimonials-heading {
+      text-align: center;
+    }
+    .testimonials-heading > h2 {
+      font-size: 30px;
+    }
+    .testimonials-heading > p {
+      padding: 5px 0px 30px 0px;
+      font-size: 20px;
+      color: gray;
+      letter-spacing: 3px;
+    }
+
+    .testimonial1 > img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px double red;
+      padding-bottom: 7px;
+    }
+
+    .testimonial-box {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      margin: auto;
+      
+    }
+
+    .first-testimonial-box {
+      width: 490px;
+     
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .testimonial-box-heading > .box-1 {
+      padding-left: 20px;
+    }
+    .testimonial-box-heading > .box-1 > .span-1 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    .box-1 > i {
+      color: #ddc700;
+    }
+
+    /* Testimonials Section end*/
+
+
+    /* Parallax section start here */
+    .parallax {
+      margin-bottom: 50px;
+      margin-top: 0px;
+      background-image: url(parallax.jpg);
+      height: 300px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .parallax-parents {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 70px;
+      text-align: center;
+    }
+
+    .parallax-box > i {
+      font-size: 60px;
+      color: #f8f4f4e7;
+    }
+    .parallax-box > h2 {
+      font-size: 30px;
+      color: white;
+      margin: 25px 0px;
+    }
+    .parallax-box > span {
+
+      color: #ffffff;
+      font-size: 20px;
+    }
+    /* Parallax section End here */
